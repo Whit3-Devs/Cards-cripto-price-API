@@ -1,40 +1,30 @@
-.body {
-    background-image: linear-gradient(to right, transparent, rgb(235, 208, 187), rgb(185, 233, 197));
-}
 
-.title-card {
-    display: "flex";
-    justify-content: "center";
-    align-items: "center";
-    color: white;
-}
 
 .card {
     width: 220px;
-    box-sizing: border-box;
     padding: 2em;
-    font-family: Arial;
-    border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
     color: black;
-    line-height: 30px;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    line-height: 10px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
     float: left;
     margin-right: 2em;
     align-items: "center";
 }
 
-.card.purple {
+.purple {
     background: linear-gradient(150deg, #796c77, #250b69 80%);
 }
 
-.card.green {
+.green {
     background: linear-gradient(150deg, #39ef74, #4600f1 100%);
 }
 
-.card.yellow {
+.yellow {
     background: linear-gradient(150deg, #c8d83c, #323036 100%);
 }
 
-.card.white {
+.white {
     background: linear-gradient(150deg, #ffffff 95%, #323036 100%);
 }

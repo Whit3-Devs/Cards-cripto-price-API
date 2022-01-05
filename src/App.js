@@ -5,20 +5,10 @@ import {
   Col
 } from 'react-bootstrap';
 import CryptoWidget from './widgets/CryptoWidget';
+import DollarWidget from './widgets/DollarWidget';
 
 const App = () => {
-  const style = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center"
-  }
-  const data = {
-    ask:  9474923.97,//Precio de compra reportado por el exchange, sin sumar comisiones.
-    totalAsk:  9474923.97,//Precio de compra final incluyendo las comisiones de transferencia y trade.
-    bid: 	9180985.07, //Precio de venta reportado por el exchange, sin restar comisiones.
-    totalBid:  9180985.07,//Precio de venta final incluyendo las comisiones de transferencia y trade.
-    time:  1641341098//Timestamp del momento en que fue actualizada esta cotización.
-  };
+
   return (
     <Container>
       <Row>
@@ -28,25 +18,19 @@ const App = () => {
       </Row>
       <Row>
         <Col xs={12} sm={6} md={4} lg={3} xl={3} xxl={3}  >
-          <CryptoWidget title='BTC' data={data}/> 
+          <CryptoWidget coin='bitcoin'/> 
         </Col>
         <Col xs={12} sm={6} md={4} lg={3} xl={3} xxl={3}  >
-          <CryptoWidget title='BTC' data={data}/> 
+          <CryptoWidget coin='ethereum'/> 
         </Col>
         <Col xs={12} sm={6} md={4} lg={3} xl={3} xxl={3}  >
-          <CryptoWidget title='BTC' data={data}/> 
+          <CryptoWidget coin='binancecoin'/> 
         </Col>
         <Col xs={12} sm={6} md={4} lg={3} xl={3} xxl={3}  >
-          <CryptoWidget title='BTC' data={data}/> 
+          <CryptoWidget coin='solana'/> 
         </Col>
         <Col xs={12} sm={6} md={4} lg={3} xl={3} xxl={3}  >
-          <CryptoWidget title='BTC' data={data}/> 
-        </Col>
-        <Col xs={12} sm={6} md={4} lg={3} xl={3} xxl={3}  >
-          <CryptoWidget title='BTC' data={data}/> 
-        </Col>
-        <Col xs={12} sm={6} md={4} lg={3} xl={3} xxl={3}  >
-          <CryptoWidget title='BTC' data={data}/> 
+          <DollarWidget /> 
         </Col>
       </Row>
     </Container>
